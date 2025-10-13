@@ -150,6 +150,7 @@ footer {
     width: 97,5%;
     margin: 0;
     padding: 20px;
+    text-align: center;
 }
 .sedm {
     height: 200px;
@@ -200,12 +201,10 @@ footer {
 fieldset {
     border: none;
 }
-
 .reg_inputbox {
     margin-bottom: 25px;
     text-align: left;
 }
-
 .reg_inputbox label {
     display: block;
     color: aliceblue;
@@ -213,7 +212,6 @@ fieldset {
     font-size: 20px;
     margin-bottom: 8px;
 }
-
 .reg_inputbox input {
     width: 95%;
     padding: 10px 15px;
@@ -226,12 +224,10 @@ fieldset {
     box-shadow: rgb(23, 128, 140, 0.5) 0 10px 20px -5px;
     transition: 0.3s;
 }
-
 .reg_inputbox input:focus {
     outline: none;
     box-shadow: rgb(31, 144, 157) 0 0 10px 2px;
 }
-
 .reg_button {
     background: rgb(31, 144, 157);
     border-radius: 999px;
@@ -245,8 +241,17 @@ fieldset {
     border: none;
     transition: 0.3s;
 }
-
 .reg_button:hover {
     background: rgb(27, 132, 144);
     transform: translateY(-3px);
+}
+.dvanact {
+    margin-left: 300px;
+    margin-top: -100px;
+    width: 900px;
+    max-width: 1000px;
+}
+.trinact {
+    ;
+
 }
