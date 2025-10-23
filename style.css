@@ -1,6 +1,19 @@
 body {
     margin: 0;
     padding: 0;
+
+.navigace {
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+    gap: 100px;
+}
+.nav {
+    display: flex;
+    justify-content: flex-start;
+    margin-top: 10px;
+    padding: 10px 30px;
+}
 }
 html {
   scroll-behavior: smooth;
@@ -31,15 +44,15 @@ button {
   width: fit-content;
   word-break: break-word;
   border: 0;
-  margin-left: 75px;
-  margin-right: 75px;
-  margin-top: 30px;
+  
 }
 .jedna {
+    display: flex;
     background: rgb(47, 137, 179);
     box-shadow: rgb(47, 137, 179, 0.5) 0 15px 30px 0px;
     border-radius: 40px;
     padding: 8px 15px;
+    justify-content: center;
 }
 .dva {
     height: 80px;
