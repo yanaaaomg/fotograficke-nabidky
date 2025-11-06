@@ -1,33 +1,45 @@
 body {
     margin: 0;
     padding: 0;
-
-.navigace {
-    margin-top: 10px;
-    display: flex;
-    justify-content: center;
-    gap: 100px;
-}
-.nav {
-    display: flex;
-    justify-content: flex-start;
-    margin-top: 10px;
-    padding: 10px 30px;
-}
 }
 html {
   scroll-behavior: smooth;
 }
-h1 {
-    text-align: center;
-    font-family: Comic Sans MS, Comic Sans, cursive;
-    font-size: 40px;
-    color: aliceblue;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.nav {
+    display: flex;
+    justify-content:space-between;
+    margin-top: 10px;
+    padding: 10px 30px;
+    background-color: rgb(74, 45, 84);
+}
+ul {
+    display: flex;
+    flex-direction:row;
+    gap: 20px;
+    padding: 0;
+}
+.img-nav {
+    width: 120px;
+    height: 100px;
+}
+.but-nav {
+    background: rgb(90, 54, 102);
+    width: fit-content;
+    word-break: break-word;
+    font-family: 'Trebuchet, 'Lucida Grande;
+    font-size: 25px;
+}
+a {
+    text-decoration: none;
 }
 button {
   background: rgb(31, 144, 157);
   border-radius: 999px;
-  box-shadow: rgb(23, 128, 140, 0.7) 0 15px 30px 0px;
   box-sizing: border-box;
   color: aliceblue;
   cursor: pointer;
@@ -46,24 +58,27 @@ button {
   border: 0;
   
 }
-.jedna {
+.div-jedna {
     display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
     background: rgb(47, 137, 179);
     box-shadow: rgb(47, 137, 179, 0.5) 0 15px 30px 0px;
     border-radius: 40px;
     padding: 8px 15px;
-    justify-content: center;
+    width:100%;
 }
-.dva {
-    height: 80px;
-    width: 40%;
-    max-width: 800px;
-    margin: 50px auto;
+.div-dva {
+    display: flex;
+    flex-direction: row;
+    align-content: flex-start;
+    justify-content: flex-start;
     border-radius: 40px;
     background: rgb(47, 137, 179);
     box-shadow: rgb(47, 137, 179, 0.7) 0 15px 30px 0px;
 }
-.p_jedna {
+.p-jedna {
     text-align: center;
     font-family:Comic Sans MS, Comic Sans, cursive;
     font-size: 30px;
@@ -71,72 +86,34 @@ button {
     padding: 15px 30px;
     text-decoration: underline;
 }
-.mezera {
-    margin-bottom: 250px;
-    border:none;
-}
 a {
     color:aliceblue
 }
-.fotak {
-    max-width: 400px;
-    position:relative;
-    left: -42px;
-    top: 20px;
-} 
-.polaroid {
-    max-width: 550px;
-    position:relative;
-    left: -120px;
-    top: -40px;
+.div-galerie {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  margin-top: 50px;
 }
-.fotak2 {
-    position:relative;
-    left: 800px;
-    top: -850px;
+.div-fotaky {
+    display: inline-block;
+  width: 380px;
+  height: 300px;
+  border-radius: 20px;                 
+  background-color: rgba(113, 50, 133, 0.7);
+  box-shadow: rgb(76, 46, 87) 0 15px 30px 0px;
+  overflow: hidden;                    
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
-.tri {
-    height: 10px;
-    max-width: 2000px;
-    border-radius: 40px;
-    background: rgb(47, 137, 179);
-    box-shadow: rgb(47, 137, 179, 0.7) 0 15px 30px 0px;
-    margin-top:-800px;
-    opacity: 60%;
-}
-.ctyry {
-    height: 280px;
-    width: 300px;
-    max-width: 800px;
-    position:relative;
-    top: 50px;
-    left: 290px;
-    border-radius: 100px;
-    background: rgba(47, 137, 179);
-    box-shadow: rgb(47, 137, 179, 0.7) 0 15px 30px 0px;
-}
-.pet {
-    height: 280px;
-    width: 300px;
-    max-width: 800px;
-    position:relative;
-    top: -230px;
-    left: 610px;
-    border-radius: 100px;
-    background: rgba(31, 144, 157, 0.7);
-    box-shadow: rgb(27, 132, 144) 0 15px 30px 0px;
-}
-.sest {
-    height: 280px;
-    width: 300px;
-    max-width: 800px;
-    position:relative;
-    top: -510px;
-    left: 930px;
-    border-radius: 100px;
-    background: rgba(47, 137, 179, 0.7);
-    box-shadow: rgb(47, 137, 179) 0 15px 30px 0px;
-    opacity: 70%;
+.div-fotaky img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  border-radius: 0;
 }
 ul {
     text-align: center;
@@ -148,14 +125,12 @@ ul {
 li {
     margin-bottom: 20px;
 }
-.kytka {
-    position:relative;
-    top: -570px;
-}
-.rtenka {
-    position:relative;
-    top: -590px;
-    left: 540px;
+.img-kytka,
+.img-rtenka {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    align-content: flex-start;
 }
 footer {
     background-color: rgb(30, 76, 98);
@@ -271,18 +246,15 @@ fieldset {
     max-width: 1000px;
 }
 .prace {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 15px;
-    margin-top: 20px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
 }
-.prace img {
-    width: 100%;
-    height: 220px;
-    object-fit: cover;
-    border-radius: 12px;
-    box-shadow: rgb(27, 132, 144) 0 10px 20px -10px;
-}
+
+
 .table_component {
     overflow: auto;
     width: 100%;
