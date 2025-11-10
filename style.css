@@ -1,7 +1,7 @@
 body {
     margin: 0;
     padding: 0;
-    font-family: Georgia Italic;
+    font-family: sans-serif;
 }
 html {
   scroll-behavior: smooth;
@@ -12,10 +12,9 @@ html {
   padding: 0;
   box-sizing: border-box;
 }
-.nav {
+.div-nav {
     display: flex;
     justify-content:space-between;
-    margin-top: 10px;
     padding: 10px 30px;
     background-color: rgb(74, 45, 84);
 }
@@ -34,14 +33,14 @@ ul {
     background: rgb(90, 54, 102);
     width: fit-content;
     word-break: break-word;
-    font-size: 27px;
-    font-family: Georgia Italic;
+    font-size: 24px;
+    font-family: sans-serif;
 }
 a {
     text-decoration: none;
 }
 button {
-  background: rgb(31, 144, 157);
+  background: rgb(90, 54, 102);
   border-radius: 999px;
   box-sizing: border-box;
   color: aliceblue;
@@ -66,11 +65,20 @@ button {
     align-items: center;
     flex-direction: column;
     background: rgb(90, 54, 102);
-    box-shadow: rgb(47, 137, 179, 0.5) 0 15px 30px 0px;
+    box-shadow: rgba(70, 40, 81, 0.5) 0 15px 30px 0px;
     border-radius: 40px;
     padding: 8px 15px;
-    width:100%;
+    width: 40%;
+    margin: 0 auto;
 }
+.div-obal {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    margin: 60px 0;
+}
+
 .ul-nabidka {
     display: flex;
     align-items: center;
@@ -137,7 +145,7 @@ li {
     align-content: flex-start;
 }
 footer {
-    background-color: rgb(30, 76, 98);
+    background-color: rgb(76, 46, 87);
     display: block;
     width: 97,5%;
     margin: 0;
@@ -153,7 +161,7 @@ footer {
     left: 200px;
     border-radius: 100px;
     background: rgb(31, 144, 157);
-    box-shadow: rgba(27, 132, 144, 0.6) 0 15px 30px 0px;
+    box-shadow: rgba(74, 45, 84, 0.6) 0 15px 30px 0px;
 }
 .p_dva {
     text-align: center;
@@ -167,7 +175,7 @@ footer {
     padding: 15px 30px;
 }
 .div-nadpis {
-    background-color: rgb(90, 54, 102);
+    background-color: rgb(74, 45, 84);
 }
 .osm {
     height: 200px;
