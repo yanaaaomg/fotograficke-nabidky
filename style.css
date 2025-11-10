@@ -1,9 +1,11 @@
 body {
     margin: 0;
     padding: 0;
+    font-family: Georgia Italic;
 }
 html {
   scroll-behavior: smooth;
+  background: rgb(200, 179, 245);
 }
 * {
   margin: 0;
@@ -20,6 +22,7 @@ html {
 ul {
     display: flex;
     flex-direction:row;
+    align-items: center;
     gap: 20px;
     padding: 0;
 }
@@ -31,8 +34,8 @@ ul {
     background: rgb(90, 54, 102);
     width: fit-content;
     word-break: break-word;
-    font-family: 'Trebuchet, 'Lucida Grande;
-    font-size: 25px;
+    font-size: 27px;
+    font-family: Georgia Italic;
 }
 a {
     text-decoration: none;
@@ -43,7 +46,6 @@ button {
   box-sizing: border-box;
   color: aliceblue;
   cursor: pointer;
-  font-family:Comic Sans MS, Comic Sans, cursive;
   font-weight: 750;
   font-size: 20px;
   line-height: 30px;
@@ -62,12 +64,17 @@ button {
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-direction: row;
-    background: rgb(47, 137, 179);
+    flex-direction: column;
+    background: rgb(90, 54, 102);
     box-shadow: rgb(47, 137, 179, 0.5) 0 15px 30px 0px;
     border-radius: 40px;
     padding: 8px 15px;
     width:100%;
+}
+.ul-nabidka {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
 }
 .div-dva {
     display: flex;
@@ -78,13 +85,11 @@ button {
     background: rgb(47, 137, 179);
     box-shadow: rgb(47, 137, 179, 0.7) 0 15px 30px 0px;
 }
-.p-jedna {
+p {
     text-align: center;
-    font-family:Comic Sans MS, Comic Sans, cursive;
     font-size: 30px;
     color: aliceblue;
     padding: 15px 30px;
-    text-decoration: underline;
 }
 a {
     color:aliceblue
@@ -117,7 +122,6 @@ a {
 }
 ul {
     text-align: center;
-    font-family:Comic Sans MS, Comic Sans, cursive;
     font-size: 28px;
     color: aliceblue;
     list-style-type: none;
@@ -153,16 +157,17 @@ footer {
 }
 .p_dva {
     text-align: center;
-    font-family:Comic Sans MS, Comic Sans, cursive;
     font-size: 28px;
     color: aliceblue;
     padding: 15px 30px;
 }
-.p_tri {
-    font-family:Comic Sans MS, Comic Sans, cursive;
-    font-size: 22px;
+.p_nadpis {
+    font-size: 36px;
     color: aliceblue;
     padding: 15px 30px;
+}
+.div-nadpis {
+    background-color: rgb(90, 54, 102);
 }
 .osm {
     height: 200px;
@@ -202,7 +207,6 @@ fieldset {
 .reg_inputbox label {
     display: block;
     color: aliceblue;
-    font-family: Comic Sans MS, Comic Sans, cursive;
     font-size: 20px;
     margin-bottom: 8px;
 }
@@ -212,7 +216,6 @@ fieldset {
     border-radius: 30px;
     border: none;
     background-color: rgba(255, 255, 255, 0.9);
-    font-family: Comic Sans MS, Comic Sans, cursive;
     font-size: 18px;
     color: rgb(30, 76, 98);
     box-shadow: rgb(23, 128, 140, 0.5) 0 10px 20px -5px;
@@ -228,7 +231,6 @@ fieldset {
     box-shadow: rgb(23, 128, 140, 0.7) 0 15px 30px 0px;
     color: aliceblue;
     cursor: pointer;
-    font-family: Comic Sans MS, Comic Sans, cursive;
     font-weight: 750;
     font-size: 20px;
     padding: 10px 35px;
@@ -246,14 +248,23 @@ fieldset {
     max-width: 1000px;
 }
 .prace {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-    gap: 10px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 16px;
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 20px 10px;
 }
-
+.prace img {
+  width: 100%;
+  max-width: 350px;
+  height: 300px;
+  object-fit: cover;
+  border-radius: 10px;
+}
 
 .table_component {
     overflow: auto;
@@ -268,7 +279,6 @@ fieldset {
     border-collapse: collapse;
     border-spacing: 1px;
     text-align: center;
-    font-family: Comic Sans MS, Comic Sans, cursive;
     font-size: 24px;
 }
 
@@ -282,7 +292,6 @@ fieldset {
     background-color: rgb(23, 128, 140, 0.7);
     color: #ffffff;
     padding: 15px;
-    font-family: Comic Sans MS, Comic Sans, cursive;
     font-size: 24px;
 }
 
@@ -291,7 +300,6 @@ fieldset {
     background-color: rgb(23, 128, 140, 0.7);
     color: #ffffff;
     padding: 10px;
-    font-family: Comic Sans MS, Comic Sans, cursive;
     font-size: 24px;
 }
 .page-table {
